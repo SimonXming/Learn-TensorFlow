@@ -1,15 +1,20 @@
 name: root
-channels: !!python/tuple
+channels:
+- conda-forge
 - anaconda-fusion
 - defaults
 dependencies:
+- mock=2.0.0=py36_0
+- pbr=3.0.1=py36_0
+- protobuf=3.3.0=py36_0
+- tensorflow=1.1.0=py36_0
 - _license=1.1=py36_1
 - alabaster=0.7.9=py36_0
 - anaconda-client=1.6.0=py36_0
 - appnope=0.1.0=py36_0
 - appscript=1.0.1=py36_0
 - astroid=1.4.9=py36_0
-- astropy=1.3=np111py36_0
+- astropy=1.3.3=np112py36_0
 - babel=2.3.4=py36_0
 - backports=1.0=py36_0
 - beautifulsoup4=4.5.3=py36_0
@@ -17,7 +22,7 @@ dependencies:
 - blaze=0.10.1=py36_0
 - bokeh=0.12.4=py36_0
 - boto=2.45.0=py36_0
-- bottleneck=1.2.0=np111py36_0
+- bottleneck=1.2.1=np112py36_0
 - cffi=1.9.1=py36_0
 - chardet=2.3.0=py36_0
 - chest=0.2.3=py36_0
@@ -25,12 +30,8 @@ dependencies:
 - cloudpickle=0.2.2=py36_0
 - clyent=1.2.2=py36_0
 - colorama=0.3.7=py36_0
-- conda-forge::conda=4.2.13=py36_0
-- conda-forge::conda-env=2.6.0=0
-- conda-forge::mock=2.0.0=py36_0
-- conda-forge::pbr=3.0.1=py36_0
-- conda-forge::protobuf=3.3.0=py36_0
-- conda-forge::tensorflow=1.1.0=py36_0
+- conda=4.3.21=py36_0
+- conda-env=2.6.0=0
 - configobj=5.0.6=py36_0
 - contextlib2=0.5.4=py36_0
 - cryptography=1.7.1=py36_0
@@ -52,7 +53,7 @@ dependencies:
 - get_terminal_size=1.0.0=py36_0
 - gevent=1.2.1=py36_0
 - greenlet=0.4.11=py36_0
-- h5py=2.6.0=np111py36_2
+- h5py=2.7.0=np112py36_0
 - hdf5=1.8.17=1
 - heapdict=1.0.0=py36_1
 - icu=54.1=0
@@ -75,16 +76,18 @@ dependencies:
 - jupyter_console=5.0.0=py36_0
 - jupyter_core=4.2.1=py36_0
 - lazy-object-proxy=1.2.2=py36_0
+- libgcc=4.8.5=1
 - libiconv=1.14=0
 - libpng=1.6.27=0
 - libtiff=4.0.6=3
+- libxgboost=0.60=h8fd8b8a_0
 - libxml2=2.9.4=0
 - libxslt=1.1.29=0
-- llvmlite=0.15.0=py36_0
+- llvmlite=0.18.0=py36_0
 - locket=0.2.0=py36_1
 - lxml=3.7.2=py36_0
 - markupsafe=0.23=py36_2
-- matplotlib=2.0.0=np111py36_0
+- matplotlib=2.0.2=np112py36_0
 - mistune=0.7.3=py36_1
 - mkl=2017.0.1=0
 - mkl-service=1.1.2=py36_3
@@ -96,14 +99,14 @@ dependencies:
 - nltk=3.2.2=py36_0
 - nose=1.3.7=py36_1
 - notebook=4.3.1=py36_0
-- numba=0.30.1=np111py36_0
-- numexpr=2.6.1=np111py36_2
-- numpy=1.11.3=py36_0
+- numba=0.33.0=np112py36_0
+- numexpr=2.6.2=np112py36_0
+- numpy=1.12.1=py36_0
 - numpydoc=0.6.0=py36_0
 - odo=0.5.0=py36_1
 - openpyxl=2.4.1=py36_0
 - openssl=1.0.2k=0
-- pandas=0.19.2=np111py36_1
+- pandas=0.20.2=np112py36_0
 - partd=0.3.7=py36_0
 - path.py=10.0=py36_0
 - pathlib2=2.2.0=py36_0
@@ -118,6 +121,7 @@ dependencies:
 - psutil=5.0.1=py36_0
 - ptyprocess=0.5.1=py36_0
 - py=1.4.32=py36_0
+- py-xgboost=0.60=py36np112hcfb0327_0
 - pyasn1=0.1.9=py36_0
 - pycosat=0.6.1=py36_1
 - pycparser=2.17=py36_0
@@ -129,12 +133,13 @@ dependencies:
 - pyopenssl=16.2.0=py36_0
 - pyparsing=2.1.4=py36_0
 - pyqt=5.6.0=py36_1
-- pytables=3.3.0=np111py36_0
+- pytables=3.3.0=np112py36_0
 - pytest=3.0.5=py36_0
 - python=3.6.0=0
 - python-dateutil=2.6.0=py36_0
 - python.app=1.2=py36_4
 - pytz=2016.10=py36_0
+- pywavelets=0.5.2=np112py36_0
 - pyyaml=3.12=py36_0
 - pyzmq=16.0.2=py36_0
 - qt=5.6.2=0
@@ -147,9 +152,9 @@ dependencies:
 - requests=2.12.4=py36_0
 - rope=0.9.4=py36_1
 - ruamel_yaml=0.11.14=py36_1
-- scikit-image=0.12.3=np111py36_1
-- scikit-learn=0.18.1=np111py36_1
-- scipy=0.18.1=np111py36_1
+- scikit-image=0.13.0=np112py36_0
+- scikit-learn=0.18.1=np112py36_1
+- scipy=0.19.0=np112py36_0
 - seaborn=0.7.1=py36_0
 - setuptools=27.2.0=py36_0
 - simplegeneric=0.8.1=py36_1
@@ -162,7 +167,7 @@ dependencies:
 - spyder=3.1.2=py36_0
 - sqlalchemy=1.1.5=py36_0
 - sqlite=3.13.0=0
-- statsmodels=0.6.1=np111py36_1
+- statsmodels=0.8.0=np112py36_0
 - sympy=1.0=py36_0
 - terminado=0.6=py36_0
 - tk=8.5.18=0
@@ -182,4 +187,14 @@ dependencies:
 - xz=5.2.2=1
 - yaml=0.1.6=0
 - zlib=1.2.8=3
+- pip:
+  - backports.shutil-get-terminal-size==1.0.0
+  - et-xmlfile==1.0.1
+  - ipython-genutils==0.1.0
+  - jupyter-client==4.4.0
+  - jupyter-console==5.0.0
+  - jupyter-core==4.2.1
+  - prompt-toolkit==1.0.9
+  - rope-py3k==0.9.4.post1
+  - tables==3.3.0
 prefix: /Users/simon/Applications/Anaconda3
